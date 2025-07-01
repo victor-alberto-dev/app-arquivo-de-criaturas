@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif JP', 'Courier New', Courier, monospace;
+    background-color:black;
+    background-repeat: repeat;
+    color: #f5f5f5;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d72638;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+    font-family: 'Nosifer', cursive;
+}
+
+.form-section {
+    background-color: #2a2a2a;
+    border: 2px solid #d72638;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form button,
+#random-creature {
+    width: 100%;
+    padding: 12px;
+    background-color: #d72638;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover,
+#random-creature:hover {
+    background-color: #a61c2d;
+}
+
+#random-creature {
+    margin-top: 10px;
+}
+
+.creatures-list {
+    margin-top: 40px;
+}
+
+.creatures-list h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #d72638;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.creatures-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.creatures-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #2a2a2a;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #d72638;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.creatures-list li:nth-child(odd) {
+    background-color: #333;
+}
+
+.delete-btn {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: #7f1c1c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #5e1212;
+}
+
+.creature-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+}
+
+/* Estilização do campo de upload */
+
+input[type="file"] {
+    display: none; /* Esconde o input original */
+}
+
+.label-file {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b0f1a;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.label-file:hover {
+    background-color: #8c1c2f;
+}
+
+/* Nome do arquivo selecionado */
+.file-name {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-style: italic;
+    color: #fff;
+}
+
+.error-message {
+    display: none;
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.input-error {
+    border: 2px solid #e74c3c;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo de Criaturas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Arquivo de Criaturas</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Adicionar Criatura</h2>
+        <form id="creature-form">
+            <label for="name">Nome da Criatura:</label>
+            <input type="text" id="name" name="name">
+            <span class="error-message" id="name-error">Por favor, insira um nome.</span>
+
+            <label for="type">Tipo:</label>
+            <input type="text" id="type" name="type">
+            <span class="error-message" id="type-error">Por favor, insira o tipo.</span>
+
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+            <span class="error-message" id="description-error">Por favor, insira uma descrição.</span>
+
+            <label class="label-file" for="image-file">Selecionar Imagem</label>
+            <input type="file" id="image-file" accept="image/*">
+            <span id="file-name" class="file-name">Nenhum arquivo selecionado</span>
+
+            <button type="submit">Adicionar Criatura</button>
+        </form>
+        <button type="button" id="random-creature">Gerar Criatura Aleatória</button>
+    </section>
+
+    <section class="creatures-list">
+        <h2>Criaturas Registradas</h2>
+        <ul id="creatures-list">
+            <!-- A lista de criaturas será inserida aqui -->
+        </ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
