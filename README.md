@@ -2,11 +2,10 @@
 
 Aplicação web feita com **HTML**, **CSS** e **JavaScript** que permite adicionar criaturas (com imagem, nome, tipo e descrição) a uma lista interativa. Também é possível gerar criaturas aleatórias inspiradas no folclore japonês!
 
-![print_cadastro](https://github.com/user-attachments/assets/96827b27-758a-4ace-98a9-08e7ef6ed2cb)
-
 ---
 ## 📷 Imagens da aplicação
 
+![print_cadastro](https://github.com/user-attachments/assets/96827b27-758a-4ace-98a9-08e7ef6ed2cb)
 
 ![print_criaturas_aleatorias](https://github.com/user-attachments/assets/5cf0852d-50e1-4569-8b0a-cdbd480e11a2)
 
